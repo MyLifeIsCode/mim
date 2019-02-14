@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mim-server/mim-server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mim-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/MimServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/mim-server/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
