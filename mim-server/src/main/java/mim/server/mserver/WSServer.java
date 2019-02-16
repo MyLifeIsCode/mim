@@ -6,15 +6,22 @@ package mim.server.mserver;
  * @desc
  **/
 
+import com.common.util.IpUtil;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import mim.server.config.AppServerConfiguration;
 import mim.server.handler.WSServerInitialzer;
+import mim.server.zk.RegisterZk;
+import mim.server.zk.ZKit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 
 
 /**
@@ -34,6 +41,13 @@ public class WSServer {
     private ServerBootstrap server;
     private ChannelFuture future;
 
+
+    @Resource
+    private AppServerConfiguration appServerConfiguration;
+
+    @Resource
+    private ZKit zKit;
+
     private static class SingletionWSServer{
         static final WSServer instance = new WSServer();
     }
@@ -52,11 +66,18 @@ public class WSServer {
                 .childHandler(new WSServerInitialzer());//自定义初始化handler容器
     }
 
+    @PostConstruct
     public void start(){
         //自定义端口
-        this.future = server.bind(8088);
-        logger.info("8088启动成功！");
+        int mimServerPort = appServerConfiguration.getMimServerPort();
+//        int mimServerPort = 8888;
+        this.future = server.bind(mimServerPort);
+        logger.info( "{}启动成功！",mimServerPort);
 
+        //注册到zk
+        RegisterZk registerZk = new RegisterZk(zKit,appServerConfiguration,IpUtil.getLocalIp());
+        Thread thread = new Thread(registerZk);
+        thread.start();
     }
 
 }

@@ -11,5 +11,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/mim-zk/pom.xml" />
+      </set>
+    </option>
   </component>
 </project>

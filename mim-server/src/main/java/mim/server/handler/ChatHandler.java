@@ -3,13 +3,25 @@ package mim.server.handler;
 import com.common.util.JsonUtils;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelId;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
+import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
+import mim.server.constant.ChatEnum;
 import mim.server.domain.TextData;
+import mim.server.handel.LoginHandel;
+import mim.server.util.SpringBeanFactory;
+import mim.server.vo.Session;
+import org.springframework.context.ApplicationContext;
+import org.springframework.data.redis.core.RedisTemplate;
+
+import javax.annotation.Resource;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author qll
@@ -19,6 +31,9 @@ import mim.server.domain.TextData;
 @Slf4j
 public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
 
+    @Resource
+    private LoginHandel loginHandel;
+
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         log.info(evt.toString());
@@ -27,6 +42,18 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
+        if(loginHandel != null){
+            System.out.println(111);
+        }
+
+//
+//        RedisTemplate<String,Session> redisTemplate = SpringBeanFactory.getBean("redisTemplate", RedisTemplate.class);
+//        //保存channel
+//        NioSocketChannel channel = (NioSocketChannel)ctx.channel();
+//        Session session = new Session(channel);
+//        String channelId= channel.id().toString();
+//        map.put(channelId,session);
+//        redisTemplate.opsForValue().getAndSet(channelId,session);
         super.channelActive(ctx);
     }
 
@@ -34,7 +61,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
             new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
-
+        RedisTemplate<String,Object> redisTemplate = SpringBeanFactory.getBean("redisTemplate", RedisTemplate.class);
         Channel currentChannel = ctx.channel();
         //获取客户端传输过来的消息
         String content = msg.text();
@@ -42,10 +69,22 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         System.out.println("接收的数据：" + content);
         //1.获取客户端发送来的消息
         TextData textData = JsonUtils.jsonToPojo(content, TextData.class);
-        log.info(textData.toString());
-        log.info(ctx.channel().id().toString());
-        /*
 
+        if(textData.getCmd() .equalsIgnoreCase("login")){
+
+        }
+        if(textData.getType() == ChatEnum.PRIVATE_CHAT.getType()){//私聊
+
+        }else if(textData.getType() == ChatEnum.GROUP_CHAT.getType()){//群聊
+
+        }
+        Channel channel = ctx.channel();
+        Channel o = (Channel)redisTemplate.opsForValue().get(channel.id().toString());
+        log.info(o.toString());
+//        TextWebSocketFrame textWebSocketFrame = new TextWebSocketFrame("11111");
+//        ChannelFuture channelFuture = channel.writeAndFlush(textWebSocketFrame);
+
+        /*
         DataContent dataContent = JsonUtils.jsonToPojo(content, DataContent.class);
         Integer action = dataContent.getAction();
         //2判断消息的类型，更具不同的类型来处理不同的业务
@@ -123,6 +162,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
     //异常处理
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+        cause.printStackTrace();
         ctx.channel().close();
         clients.remove(ctx.channel());
     }

@@ -1,5 +1,8 @@
 package mim.server;
 
+import mim.server.config.AppServerConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,9 +13,18 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  **/
 
 @SpringBootApplication
-public class MimServer {
+public class MimServer  implements CommandLineRunner {
+
+
+    @Autowired
+    private AppServerConfiguration appServerConfiguration;
 
     public static void main(String[] args) {
         SpringApplication.run(MimServer.class,args);
+    }
+
+    @Override
+    public void run(String... strings) throws Exception {//容器初始化完成后执行
+        System.out.println(appServerConfiguration.getMimServerPort());
     }
 }

@@ -1,7 +1,0 @@
-mim\server\handler\HeartBeatHandler.class
-mim\server\mserver\WSServer.class
-mim\server\booter\NettyBooter.class
-mim\server\mserver\WSServer$SingletionWSServer.class
-mim\server\handler\ChatHandler.class
-mim\server\handler\WSServerInitialzer.class
-mim\server\MimServer.class

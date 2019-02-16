@@ -1,5 +1,7 @@
 package mim.server.config;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -9,7 +11,9 @@ import org.springframework.stereotype.Component;
  * @desc 配置
  **/
 @Component
-public class AppConfiguration {
+@Data
+@NoArgsConstructor
+public class AppServerConfiguration {
 
     @Value("${mim.server.port}")
     private int mimServerPort;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-zk/common-zk.iml" filepath="$PROJECT_DIR$/common-zk/common-zk.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mim.iml" filepath="$PROJECT_DIR$/.idea/mim.iml" />
       <module fileurl="file://$PROJECT_DIR$/mim-server/mim-server.iml" filepath="$PROJECT_DIR$/mim-server/mim-server.iml" />
     </modules>
