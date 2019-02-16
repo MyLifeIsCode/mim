@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Component
 @Documented
-public @interface Handeler {
+public @interface Handler {
 
     String cmd();//作用号
 }

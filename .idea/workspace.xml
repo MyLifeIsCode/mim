@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handeler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mim-server/target/" />
@@ -42,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Handeler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handeler.java">
+      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="26" />
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,12 +60,14 @@
       <file leaf-file-name="LoginHandel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
+            <state relative-caret-position="321">
+              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,14 +97,35 @@
       <file leaf-file-name="MsgService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
+            <state relative-caret-position="219">
+              <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#353#354#0" expanded="true" />
                 <element signature="e#371#372#0" expanded="true" />
                 <element signature="e#487#488#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NativeMethodAccessorImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/AbstractHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#197#198#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,38 +143,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractChannelHandlerContext.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/AbstractChannelHandlerContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="174" column="5" lean-forward="true" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringBeanFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/util/SpringBeanFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -174,6 +175,7 @@
       <find>swagger.version</find>
       <find>swa</find>
       <find>@Value</find>
+      <find>MsgActionEnumMsgActionEnum</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,8 +225,9 @@
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/vo/Session.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/domain/TextData.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handel.java" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" />
+        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/AbstractHandler.java" />
+        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" />
       </list>
     </option>
@@ -268,7 +271,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1006" />
@@ -631,12 +634,12 @@
       <option name="presentableId" value="Default" />
       <updated>1549967574019</updated>
       <workItem from="1549967575536" duration="1307000" />
-      <workItem from="1550022781139" duration="64521000" />
+      <workItem from="1550022781139" duration="66619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65828000" />
+    <option name="totallyTimeSpent" value="67926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
@@ -659,12 +662,12 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run Dashboard" visible="true" weight="0.2511737" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.40962443" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24413146" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" weight="0.3298122" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298122" />
@@ -699,31 +702,22 @@
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java</url>
+          <line>25</line>
+          <properties class="mim.server.service.MsgService" method="setSession">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="81" />
+      <option name="time" value="88" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/TextWebSocketFrameHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="56" column="134" selection-start-line="56" selection-start-column="134" selection-end-line="56" selection-end-column="134" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/timeout/IdleStateEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/Channel.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -1117,24 +1111,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handeler.java">
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="26" />
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1149,10 +1131,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/AbstractHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
+        <state relative-caret-position="219">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#353#354#0" expanded="true" />
