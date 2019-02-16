@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mim.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/com/common/util/JsonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/common/util/JsonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/common-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/mim-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/mim-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/MimServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/MimServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/booter/NettyBooter.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/booter/NettyBooter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/config/AppConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/config/AppServerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/domain/TextData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/domain/TextData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/TestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/TestHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/WSServerInitialzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/WSServerInitialzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/mserver/WSServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/mserver/WSServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/MimServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/MimServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/booter/NettyBooter.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/booter/NettyBooter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/config/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/domain/TextData.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/domain/TextData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/HeartBeatHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/HeartBeatHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/TestHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/TestHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/WSServerInitialzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/handler/WSServerInitialzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/mserver/WSServer$SingletionWSServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/mserver/WSServer$SingletionWSServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/classes/mim/server/mserver/WSServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/classes/mim/server/mserver/WSServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-server/target/mim-server-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mim-server/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -67,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="34" column="35" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="-102">
+              <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MsgService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MsgService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="500">
+              <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#353#354#0" expanded="true" />
@@ -260,9 +223,9 @@
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/vo/Session.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/domain/TextData.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/annotation/Handel.java" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" />
+        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java" />
       </list>
     </option>
   </component>
@@ -668,15 +631,16 @@
       <option name="presentableId" value="Default" />
       <updated>1549967574019</updated>
       <workItem from="1549967575536" duration="1307000" />
-      <workItem from="1550022781139" duration="63669000" />
+      <workItem from="1550022781139" duration="64521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64976000" />
+    <option name="totallyTimeSpent" value="65828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1015" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -695,12 +659,12 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" visible="true" weight="0.49295774" />
+      <window_info anchor="bottom" id="Run Dashboard" visible="true" weight="0.2511737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24413146" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" weight="0.3298122" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23720682" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3298122" />
@@ -1175,26 +1139,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="39" column="43" lean-forward="true" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/service/MsgService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="500">
+          <caret line="34" column="110" selection-start-line="34" selection-start-column="110" selection-end-line="34" selection-end-column="110" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#353#354#0" expanded="true" />
             <element signature="e#371#372#0" expanded="true" />
             <element signature="e#487#488#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
