@@ -22,8 +22,13 @@ public class JsonUtils {
     /**
      * 将对象转换成json字符串。
      */
-    public static String objectToJson(Object data) throws Exception {
-        String string = MAPPER.writeValueAsString(data);
+    public static String objectToJson(Object data){
+        String string = null;
+        try {
+            string = MAPPER.writeValueAsString(data);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
         return string;
     }
 

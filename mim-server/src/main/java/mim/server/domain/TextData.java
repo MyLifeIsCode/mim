@@ -18,7 +18,8 @@ public class TextData implements Serializable {
 
     private String cmd;//login 登录，msg 发送消息
 
-    private long id;
+    private Long fromUid;
 
+    private Long toUid;
 
 }

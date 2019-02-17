@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
  * @desc 配置
  **/
 @Component
-@Data
 @NoArgsConstructor
+@Data
 public class AppServerConfiguration {
 
     @Value("${mim.server.port}")

@@ -43,6 +43,16 @@ public class ZKit {
             zkClient.createEphemeral(path,data);
         }
     }
+    /**
+     * 创建临时节点数据
+     * @param path
+     * @param data
+     */
+    public void createNode(String path,Object data){
+        if(!zkClient.exists(path)){
+            zkClient.createEphemeral(path,data);
+        }
+    }
 
     /**
      * 获取某个路径下所有节点

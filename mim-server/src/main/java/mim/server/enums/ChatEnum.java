@@ -1,4 +1,4 @@
-package mim.server.constant;
+package mim.server.enums;
 
 /**
  * @author qll

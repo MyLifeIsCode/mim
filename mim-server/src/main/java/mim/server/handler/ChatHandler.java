@@ -1,27 +1,20 @@
 package mim.server.handler;
 
+import com.common.util.IpUtil;
 import com.common.util.JsonUtils;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
-import io.netty.channel.ChannelId;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
-import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import io.netty.util.concurrent.GlobalEventExecutor;
 import lombok.extern.slf4j.Slf4j;
-import mim.server.constant.ChatEnum;
 import mim.server.domain.TextData;
-import mim.server.handel.LoginHandel;
+import mim.server.handel.AbstractHandler;
+import mim.server.service.MsgService;
 import mim.server.util.SpringBeanFactory;
-import mim.server.vo.Session;
-import org.springframework.context.ApplicationContext;
 import org.springframework.data.redis.core.RedisTemplate;
-
-import javax.annotation.Resource;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author qll
@@ -31,9 +24,6 @@ import java.util.Map;
 @Slf4j
 public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
 
-    @Resource
-    private LoginHandel loginHandel;
-
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         log.info(evt.toString());
@@ -42,11 +32,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        if(loginHandel != null){
-            System.out.println(111);
-        }
 
-//
 //        RedisTemplate<String,Session> redisTemplate = SpringBeanFactory.getBean("redisTemplate", RedisTemplate.class);
 //        //保存channel
 //        NioSocketChannel channel = (NioSocketChannel)ctx.channel();
@@ -61,6 +47,7 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
             new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
+        MsgService msgService = SpringBeanFactory.getBean("msgService", MsgService.class);
         RedisTemplate<String,Object> redisTemplate = SpringBeanFactory.getBean("redisTemplate", RedisTemplate.class);
         Channel currentChannel = ctx.channel();
         //获取客户端传输过来的消息
@@ -69,18 +56,26 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         System.out.println("接收的数据：" + content);
         //1.获取客户端发送来的消息
         TextData textData = JsonUtils.jsonToPojo(content, TextData.class);
+        AbstractHandler abstractHandler = msgService.getHandlerMap().get(textData.getCmd());
+        abstractHandler.onHandler(textData.getToUid(),currentChannel);
+        String localIp = IpUtil.getLocalIp();
 
-        if(textData.getCmd() .equalsIgnoreCase("login")){
 
-        }
-        if(textData.getType() == ChatEnum.PRIVATE_CHAT.getType()){//私聊
 
-        }else if(textData.getType() == ChatEnum.GROUP_CHAT.getType()){//群聊
 
-        }
-        Channel channel = ctx.channel();
-        Channel o = (Channel)redisTemplate.opsForValue().get(channel.id().toString());
-        log.info(o.toString());
+//        if(textData.getCmd() .equalsIgnoreCase("login")){
+//
+//        }
+//        if(textData.getType() == ChatEnum.PRIVATE_CHAT.getType()){//私聊
+//
+//        }else if(textData.getType() == ChatEnum.GROUP_CHAT.getType()){//群聊
+//
+//        }
+//        Channel channel = ctx.channel();
+//        Channel o = (Channel)redisTemplate.opsForValue().get(channel.id().toString());
+//        log.info(o.toString());
+
+
 //        TextWebSocketFrame textWebSocketFrame = new TextWebSocketFrame("11111");
 //        ChannelFuture channelFuture = channel.writeAndFlush(textWebSocketFrame);
 

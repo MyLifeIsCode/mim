@@ -11,4 +11,8 @@ import java.lang.annotation.*;
 public @interface Handler {
 
     String cmd();//作用号
+
+    Class reqClazz();
+
+    Class resClazz();
 }

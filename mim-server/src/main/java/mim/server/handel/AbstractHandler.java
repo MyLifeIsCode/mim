@@ -1,5 +1,8 @@
 package mim.server.handel;
 
+
+import io.netty.channel.Channel;
+
 /**
  * @author qll
  * @create 2019-02-16 19:32
@@ -7,7 +10,7 @@ package mim.server.handel;
  **/
 public abstract class AbstractHandler {
 
-    public void onHandler(){
+    public void onHandler(Long uid, Channel channel){
         System.out.println(111);
     }
 }

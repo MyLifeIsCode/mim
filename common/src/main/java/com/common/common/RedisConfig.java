@@ -1,4 +1,4 @@
-package mim.server.config;
+package com.common.common;
 
 /**
  * @author qll

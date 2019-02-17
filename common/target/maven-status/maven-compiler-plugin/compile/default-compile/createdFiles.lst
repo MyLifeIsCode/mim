@@ -1,1 +1,3 @@
 com\common\util\JsonUtils.class
+com\common\common\RedisConfig.class
+com\common\util\IpUtil.class
