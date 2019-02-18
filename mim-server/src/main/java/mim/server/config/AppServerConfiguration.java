@@ -18,6 +18,9 @@ public class AppServerConfiguration {
     @Value("${mim.server.port}")
     private int mimServerPort;
 
+    @Value("${server.port}")
+    private int serverPort;
+
     @Value("${app.zk.addr}")
     private String zkAddr;
 

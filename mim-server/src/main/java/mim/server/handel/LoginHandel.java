@@ -27,7 +27,7 @@ public class LoginHandel extends AbstractHandler{
     private MsgService msgService;
 
     @Resource
-    private RedisTemplate<String,Object> redisTemplate;
+    private RedisTemplate<String,String> redisTemplate;
 
     @Resource
     private AppServerConfiguration appServerConfiguration;
@@ -47,9 +47,10 @@ public class LoginHandel extends AbstractHandler{
     @Override
     public void onHandler(Long uid, Channel channel) {
         String localIp = IpUtil.getLocalIp();
-        int mimServerPort = appServerConfiguration.getMimServerPort();
-        String mimServerInfo = localIp + ":" + mimServerPort;
+        int serverPort = appServerConfiguration.getServerPort();
+        String mimServerInfo = localIp + ":" + serverPort;
         redisTemplate.opsForValue().set(Long.toString(uid),mimServerInfo);
+        String s = redisTemplate.opsForValue().get(Long.toString(uid));
         onLogin(uid,channel);
     }
 }

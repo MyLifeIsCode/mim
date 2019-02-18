@@ -1,9 +1,9 @@
 package mim.server.cntroller;
 
 import com.common.util.JsonUtils;
+import com.common.vo.P2pMsgReq;
 import mim.server.service.MsgService;
 import mim.server.vo.GroupMsgReq;
-import mim.server.vo.P2pMsgReq;
 import mim.server.vo.Session;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;

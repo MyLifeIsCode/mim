@@ -1,4 +1,4 @@
-package mim.server.vo;
+package com.common.vo;
 
 import lombok.Data;
 
