@@ -6,6 +6,7 @@
 "toUid":"123"
 }
 
+----------route---------------
 //私聊
 {
 "msg":"私聊",
@@ -19,6 +20,26 @@
 "msg":"456",
 "toUid":"123"
 }
+
+//发送群组消息
+/mimRoute/sendGroupMsg
+{
+"msg":"hello 123",
+"fromUid":"123",
+"groupId":"987654321"
+}
+
+------------------account-------------
+//用户加入某个组
+/account/addToGroup
+{
+"uid":"123",
+"groupId":"987654321"
+}
+//获取某个组的用户
+/account/getUidsByGroupId/{groupId}
+http://localhost:10003/account/getUidsByGroupId/987654321
+
 
 连接到服务器
 从服务器

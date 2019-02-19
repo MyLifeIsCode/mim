@@ -60,10 +60,6 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         abstractHandler.onHandler(textData.getToUid(),currentChannel);
         String localIp = IpUtil.getLocalIp();
 
-
-
-
-
 //        if(textData.getCmd() .equalsIgnoreCase("login")){
 //
 //        }

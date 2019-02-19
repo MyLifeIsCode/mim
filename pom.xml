@@ -32,6 +32,7 @@
         <module>common</module>
         <module>common-zk</module>
         <module>mim-route</module>
+        <module>mim-account</module>
     </modules>
 
     <dependencyManagement>
