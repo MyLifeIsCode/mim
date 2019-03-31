@@ -33,6 +33,9 @@
         <module>common-zk</module>
         <module>mim-route</module>
         <module>mim-account</module>
+        <module>netty-client</module>
+        <module>netty-server</module>
+        <module>common-redis</module>
     </modules>
 
     <dependencyManagement>

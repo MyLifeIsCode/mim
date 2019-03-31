@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="添加mybatis,还未测试">
-      <change afterPath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/UserMapper.java" afterDir="false" />
+    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="添加mybatis,只能使用注解方式，xml暂时不好用">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/SysUserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-account/src/main/resources/mapping/sysuser/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/src/main/resources/mapping/sysuser/SysUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mim-route/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-route/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mim-server/target/" />
     <ignored path="$PROJECT_DIR$/common/target/" />
@@ -23,6 +15,8 @@
     <ignored path="$PROJECT_DIR$/common-zk/target/" />
     <ignored path="$PROJECT_DIR$/mim-route/target/" />
     <ignored path="$PROJECT_DIR$/mim-account/target/" />
+    <ignored path="$PROJECT_DIR$/netty-client/target/" />
+    <ignored path="$PROJECT_DIR$/netty-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,61 +27,147 @@
     <session id="-2074415599">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="3" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="5540" />
+          <entry key="java" value="5785" />
           <entry key="properties" value="212" />
-          <entry key="txt" value="262" />
-          <entry key="xml" value="313" />
+          <entry key="txt" value="284" />
+          <entry key="xml" value="319" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5540" />
-          <entry key="PLAIN_TEXT" value="264" />
+          <entry key="JAVA" value="5785" />
+          <entry key="PLAIN_TEXT" value="286" />
           <entry key="Properties" value="212" />
-          <entry key="XML" value="313" />
+          <entry key="XML" value="319" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="10" />
-          <entry key="java" value="148" />
+          <entry key="class" value="12" />
+          <entry key="java" value="157" />
           <entry key="properties" value="19" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="29" />
+          <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="10" />
-          <entry key="JAVA" value="148" />
+          <entry key="CLASS" value="12" />
+          <entry key="JAVA" value="157" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="19" />
-          <entry key="XML" value="29" />
+          <entry key="XML" value="32" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mim-route/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="475">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/ChatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/WSServerInitialzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="23" column="44" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/HeartBeatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -104,11 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>redis</find>
-      <find>RedisConnectionFactory</find>
-      <find>spring-boot</find>
-      <find>jedis</find>
-      <find>Configuration</find>
       <find>redisconf</find>
       <find>RedisConfig</find>
       <find>RedisTemplate</find>
@@ -134,6 +209,11 @@
       <find>generatorConfig</find>
       <find>java_home</find>
       <find>Thread</find>
+      <find>netty</find>
+      <find>SimpleChannelInboundHandler</find>
+      <find>I</find>
+      <find>@As</find>
+      <find>aspe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,12 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/config/AppServerConfiguration.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/common/util/HttpUtils.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/common/vo/GroupMsgReq.java" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/GroupHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/common/contant/UrlConstant.java" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handler/ChatHandler.java" />
         <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" />
         <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/AccountApplication.java" />
         <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/vo/UidGroup.java" />
@@ -193,6 +267,12 @@
         <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/UserController.java" />
         <option value="$PROJECT_DIR$/mim-account/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/mim-route/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java" />
+        <option value="$PROJECT_DIR$/netty-server/pom.xml" />
+        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/Test.java" />
       </list>
     </option>
   </component>
@@ -248,7 +328,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,55 +338,37 @@
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-route" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
@@ -352,20 +413,58 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="cntroller" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mim" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mim" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mim" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mim" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mim" type="462c0819:PsiDirectoryNode" />
+              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="handle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,9 +476,9 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551112443069" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552833620657" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-ssm-master/springboot-ssm-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -544,7 +643,11 @@
       <workItem from="1550501968901" duration="6525000" />
       <workItem from="1550586145845" duration="7009000" />
       <workItem from="1550674713967" duration="8515000" />
-      <workItem from="1551105844882" duration="5326000" />
+      <workItem from="1551105844882" duration="5411000" />
+      <workItem from="1551191066658" duration="3562000" />
+      <workItem from="1551278893159" duration="120000" />
+      <workItem from="1552443485897" duration="26000" />
+      <workItem from="1552833599502" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="添加路由">
       <created>1550411811224</created>
@@ -581,17 +684,23 @@
       <option name="project" value="LOCAL" />
       <updated>1550683290749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="添加mybatis,只能使用注解方式，xml暂时不好用">
+      <created>1551112494260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1551112494260</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114359000" />
+    <option name="totallyTimeSpent" value="118772000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -639,7 +748,8 @@
     <MESSAGE value="添加群组消息" />
     <MESSAGE value="群发消息添加线程池" />
     <MESSAGE value="添加mybatis,还未测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis,还未测试" />
+    <MESSAGE value="添加mybatis,只能使用注解方式，xml暂时不好用" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis,只能使用注解方式，xml暂时不好用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -663,78 +773,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/vo/GroupMsgReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/service/MsgService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/inteceptor/HttpLogInteceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/测试数据.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/java/com/mim/controller/MimRouteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1075">
-          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/java/com/mim/service/MimRouteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/util/HttpUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/java/com/mim/MimRouteApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/MimServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common-zk/src/main/java/com/mim/ZkApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
@@ -786,7 +824,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/mapper/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/UserController.java" />
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -809,25 +846,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/UserServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/mybatis/sqlMapConfig.xml" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/User.java" />
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
           <caret line="38" column="43" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/UserMapper.java" />
     <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/DruidConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -853,9 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -891,9 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,9 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,9 +934,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,9 +941,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,12 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,9 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,8 +988,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mim-route/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="198">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/ChatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/WSServerInitialzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="23" column="44" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/HeartBeatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
