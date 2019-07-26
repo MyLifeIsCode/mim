@@ -1,5 +1,7 @@
 package com.mim.handler;
 
+import com.mim.cache.ChannelCacheMap;
+import com.mim.enums.CmdEnum;
 import com.mim.util.IpUtil;
 import com.mim.util.JsonUtils;
 import com.mim.service.MsgService;
@@ -16,6 +18,8 @@ import com.mim.handel.AbstractHandler;
 import com.mim.util.SpringBeanFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 
+import java.util.Objects;
+
 /**
  * @author qll
  * @create 2019-02-13 14:16
@@ -24,6 +28,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 @Slf4j
 public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame> {
 
+    ChannelCacheMap<Long,Channel> channelCacheMap = ChannelCacheMap.getInstance();
     @Override
     public void userEventTriggered(ChannelHandlerContext ctx, Object evt) throws Exception {
         log.info(evt.toString());
@@ -56,9 +61,13 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         System.out.println("接收的数据：" + content);
         //1.获取客户端发送来的消息
         TextData textData = JsonUtils.jsonToPojo(content, TextData.class);
-        AbstractHandler abstractHandler = msgService.getHandlerMap().get(textData.getCmd());
-        abstractHandler.onHandler(textData.getToUid(),currentChannel);
-        String localIp = IpUtil.getLocalIp();
+        if(Objects.equals(textData.getCmd(), CmdEnum.Login.getCmd())){
+            AbstractHandler abstractHandler = msgService.getHandlerMap().get(textData.getCmd());
+            abstractHandler.onHandler(textData.getToUid(),currentChannel);
+            String localIp = IpUtil.getLocalIp();
+            channelCacheMap.put(textData.getFromUid(),currentChannel);
+        }
+
 
 //        if(textData.getCmd() .equalsIgnoreCase("login")){
 //

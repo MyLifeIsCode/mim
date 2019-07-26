@@ -34,9 +34,9 @@ public class WSServerInitialzer extends ChannelInitializer<SocketChannel> {
 
         //===================增加心跳===================
         //如果是读写空闲  不处理
-        pipeline.addLast(new IdleStateHandler(8,10,12));
+//        pipeline.addLast(new IdleStateHandler(8,10,12));
         //自定义空闲状态检测
-//        pipeline.addLast(new HeartBeatHandler());
+        pipeline.addLast(new HeartBeatHandler());
 
         /*
          * websocket 服务器处理的协议 ，用于指定给客户端连接访问的路由 :/ws
@@ -49,6 +49,7 @@ public class WSServerInitialzer extends ChannelInitializer<SocketChannel> {
         //自定义handler
 //        pipeline.addLast(new TestHandler());
         pipeline.addLast(new ChatHandler());
+
 
     }
 }
