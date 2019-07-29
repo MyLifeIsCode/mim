@@ -7,18 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+<<<<<<< HEAD
         <module name="chat-server" />
         <module name="common" />
+=======
+>>>>>>> cc84deb64cda9472ae31960d21e6ed9510a58b7c
         <module name="common-redis" />
+        <module name="common" />
         <module name="common-zk" />
+<<<<<<< HEAD
         <module name="coretechnology_1" />
         <module name="mim-account" />
+=======
+        <module name="netty-server" />
+        <module name="netty-client" />
+>>>>>>> cc84deb64cda9472ae31960d21e6ed9510a58b7c
         <module name="mim-route" />
+        <module name="mim-account" />
         <module name="mim-server" />
+<<<<<<< HEAD
         <module name="netty" />
         <module name="netty-client" />
         <module name="netty-server" />
         <module name="spring-security" />
+=======
+>>>>>>> cc84deb64cda9472ae31960d21e6ed9510a58b7c
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,7 +52,18 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+<<<<<<< HEAD
       <module name="spring-security" options="-parameters" />
+=======
+      <module name="common" options="-parameters" />
+      <module name="common-redis" options="-parameters" />
+      <module name="common-zk" options="-parameters" />
+      <module name="mim-account" options="-parameters" />
+      <module name="mim-route" options="-parameters" />
+      <module name="mim-server" options="-parameters" />
+      <module name="netty-client" options="-parameters" />
+      <module name="netty-server" options="-parameters" />
+>>>>>>> cc84deb64cda9472ae31960d21e6ed9510a58b7c
     </option>
   </component>
 </project>

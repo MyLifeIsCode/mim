@@ -6,8 +6,12 @@ package com.mim.mserver;
  * @desc
  **/
 
+import com.mim.cache.ChannelCacheMap;
+import com.mim.service.MsgService;
 import com.mim.util.IpUtil;
+import com.mim.vo.Session;
 import io.netty.bootstrap.ServerBootstrap;
+import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -18,6 +22,7 @@ import com.mim.zk.RegisterZk;
 import com.mim.zk.ZKit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -41,12 +46,15 @@ public class WSServer {
     private ServerBootstrap server;
     private ChannelFuture future;
 
-
+//    ChannelCacheMap<Long, Channel> channelCacheMap = ChannelCacheMap.getInstance();
     @Resource
     private AppServerConfiguration appServerConfiguration;
 
     @Resource
     private ZKit zKit;
+
+    @Autowired
+    private MsgService msgService;
 
     private static class SingletionWSServer{
         static final WSServer instance = new WSServer();
@@ -78,6 +86,16 @@ public class WSServer {
         RegisterZk registerZk = new RegisterZk(zKit,appServerConfiguration,IpUtil.getLocalIp());
         Thread thread = new Thread(registerZk);
         thread.start();
+        Thread cacheThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                ChannelCacheMap<Long, Session> channelCacheMap = msgService.getChannelCacheMap();
+                channelCacheMap.clearExpireKey(channelCacheMap);
+            }
+        });
+        cacheThread.setName("channelCacheMap");
+        cacheThread.setDaemon(true);
+        cacheThread.start();
     }
 
 }

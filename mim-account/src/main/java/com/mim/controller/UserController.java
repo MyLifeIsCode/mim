@@ -22,7 +22,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/test")
+    /*@RequestMapping("/test")
     @ResponseBody
     public User test(@RequestParam String username){
         return userService.findByUsername(username);
@@ -40,5 +40,5 @@ public class UserController {
         user.setCreatedTime(new Date());
         userService.register(user);
         return true;
-    }
+    }*/
 }

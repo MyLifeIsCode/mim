@@ -1,8 +1,10 @@
 package com.mim.service;
 
 import com.mim.annotation.Handler;
+import com.mim.cache.ChannelCacheMap;
 import com.mim.handel.AbstractHandler;
 import com.mim.vo.Session;
+import io.netty.channel.Channel;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ApplicationObjectSupport;
 import org.springframework.stereotype.Component;
@@ -19,18 +21,23 @@ import java.util.concurrent.ConcurrentHashMap;
 @Component
 public class MsgService extends ApplicationObjectSupport  {
 
-    private static Map<Long,Session> sessionMap = new ConcurrentHashMap<>();//存放所有session
+    //存放所有登录用户session
+    private static ChannelCacheMap<Long, Session> channelCacheMap = new ChannelCacheMap<Long, Session>(30 * 60 * 1000L);
     private static Map<String,AbstractHandler> handlerMap = new ConcurrentHashMap<>();//存放handler
     private static Map<String,Class> reqMap = new ConcurrentHashMap<>();//存放请求Class
     private static Map<String,Class> resMap = new ConcurrentHashMap<>();//存放返回Class
 
 
     public void setSession(Long uid, Session session){
-        sessionMap.put(uid,session);
+        channelCacheMap.put(uid,session);
     }
 
     public Session getSession(Long uid){
-        return sessionMap.get(uid);
+        return channelCacheMap.get(uid);
+    }
+
+    public ChannelCacheMap<Long, Session> getChannelCacheMap(){
+        return channelCacheMap;
     }
 
     public Map<String,AbstractHandler> getHandlerMap(){

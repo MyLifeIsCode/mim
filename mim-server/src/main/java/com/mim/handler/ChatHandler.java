@@ -1,8 +1,11 @@
 package com.mim.handler;
 
+import com.mim.cache.ChannelCacheMap;
+import com.mim.enums.CmdEnum;
 import com.mim.util.IpUtil;
 import com.mim.util.JsonUtils;
 import com.mim.service.MsgService;
+import com.mim.vo.Session;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
@@ -15,6 +18,8 @@ import com.mim.domain.TextData;
 import com.mim.handel.AbstractHandler;
 import com.mim.util.SpringBeanFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+
+import java.util.Objects;
 
 /**
  * @author qll
@@ -32,14 +37,6 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-
-//        RedisTemplate<String,Session> redisTemplate = SpringBeanFactory.getBean("redisTemplate", RedisTemplate.class);
-//        //保存channel
-//        NioSocketChannel channel = (NioSocketChannel)ctx.channel();
-//        Session session = new Session(channel);
-//        String channelId= channel.id().toString();
-//        map.put(channelId,session);
-//        redisTemplate.opsForValue().getAndSet(channelId,session);
         super.channelActive(ctx);
     }
 
@@ -57,8 +54,16 @@ public class ChatHandler extends SimpleChannelInboundHandler<TextWebSocketFrame>
         //1.获取客户端发送来的消息
         TextData textData = JsonUtils.jsonToPojo(content, TextData.class);
         AbstractHandler abstractHandler = msgService.getHandlerMap().get(textData.getCmd());
-        abstractHandler.onHandler(textData.getToUid(),currentChannel);
-        String localIp = IpUtil.getLocalIp();
+        if(Objects.equals(textData.getCmd(), CmdEnum.Login.getCmd())){//登录
+            abstractHandler.onHandler(textData.getToUid(),currentChannel);//缓存
+        }
+//        else if(Objects.equals(textData.getCmd(), CmdEnum.OneToOne.getCmd())){//单聊
+//            Session session = msgService.getSession(textData.getToUid());
+//            session.sendMsg(msg.text());
+//        }else if(Objects.equals(textData.getCmd(), CmdEnum.Group.getCmd())){//群聊
+//            //从数据库中读取该群组下的人
+//        }
+
 
 //        if(textData.getCmd() .equalsIgnoreCase("login")){
 //

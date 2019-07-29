@@ -56,9 +56,7 @@ public class MimRouteController {
             String serverInfo = redisTemplate.opsForValue().get(uid);
             String url = HTTP_PRE + serverInfo + GROUP_METHOD;
             executor.execute(new HttpThread(url,groupJson));
-//            mimRouteService.sendPostHttp(url,groupJson);
         });
-
     }
 
 

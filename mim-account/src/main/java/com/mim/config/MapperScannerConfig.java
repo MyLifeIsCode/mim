@@ -1,7 +1,6 @@
 package com.mim.config;
 
 
-import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,10 +10,10 @@ import org.springframework.context.annotation.Configuration;
 public class MapperScannerConfig {
 
     // mapper接口的扫描器
-    @Bean
+  /*  @Bean
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setBasePackage("cn.mim.domain");
         return mapperScannerConfigurer;
-    }
+    }*/
 }
