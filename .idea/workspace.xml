@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class" description="ctx.fireUserEventTriggered(evt);" line="36" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="添加mybatis,只能使用注解方式，xml暂时不好用">
+    <list default="true" id="43fda5b7-6166-4251-96e0-79bd047d8f1d" name="Default" comment="redis init">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-zk/common-zk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/common-zk/common-zk.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-account/mim-account.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-account/mim-account.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-route/mim-route.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-route/mim-route.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mim-server/mim-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mim-server/mim-server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/mim-server/target/" />
@@ -17,60 +27,90 @@
     <ignored path="$PROJECT_DIR$/mim-account/target/" />
     <ignored path="$PROJECT_DIR$/netty-client/target/" />
     <ignored path="$PROJECT_DIR$/netty-server/target/" />
+    <ignored path="$PROJECT_DIR$/common-redis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-security/target/" />
+    <ignored path="$PROJECT_DIR$/coretechnology_1/target/" />
+    <ignored path="$PROJECT_DIR$/netty/target/" />
+    <ignored path="$PROJECT_DIR$/chat-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/mim$EchoServer.ic" NAME="EchoServer Coverage Results" MODIFIED="1560870423281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.mim.netty.echo.server.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="241" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2074415599">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.21" value="3" />
-          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.23" value="3" />
+          <entry key="project.open.time.24" value="4" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.26" value="3" />
+          <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="class" value="17" />
           <entry key="dummy" value="2" />
-          <entry key="java" value="5785" />
-          <entry key="properties" value="212" />
-          <entry key="txt" value="284" />
-          <entry key="xml" value="319" />
+          <entry key="html" value="19" />
+          <entry key="java" value="13613" />
+          <entry key="properties" value="219" />
+          <entry key="txt" value="299" />
+          <entry key="xml" value="389" />
+          <entry key="yaml" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5785" />
-          <entry key="PLAIN_TEXT" value="286" />
-          <entry key="Properties" value="212" />
-          <entry key="XML" value="319" />
+          <entry key="CLASS" value="17" />
+          <entry key="HTML" value="19" />
+          <entry key="JAVA" value="13613" />
+          <entry key="PLAIN_TEXT" value="301" />
+          <entry key="Properties" value="219" />
+          <entry key="XML" value="389" />
+          <entry key="YAML" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="12" />
-          <entry key="java" value="157" />
-          <entry key="properties" value="19" />
+          <entry key="class" value="74" />
+          <entry key="html" value="5" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="266" />
+          <entry key="pom" value="1" />
+          <entry key="properties" value="21" />
           <entry key="txt" value="1" />
-          <entry key="xml" value="32" />
+          <entry key="xml" value="53" />
+          <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="12" />
-          <entry key="JAVA" value="157" />
+          <entry key="CLASS" value="74" />
+          <entry key="HTML" value="5" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="266" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="19" />
-          <entry key="XML" value="32" />
+          <entry key="Properties" value="21" />
+          <entry key="XML" value="54" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -78,35 +118,52 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
+        <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/handler/in/TextWebSocketFrameHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="925">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11025">
+              <caret line="479" column="22" selection-start-line="479" selection-start-column="22" selection-end-line="479" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="485" column="41" selection-start-line="485" selection-start-column="41" selection-end-line="485" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/LoginHandel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/GroupHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+              <folding>
+                <element signature="e#178#179#0" expanded="true" />
+                <element signature="e#223#224#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,41 +172,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/ChatHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="1125">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java">
+        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/AbstractHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#214#215#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -157,17 +194,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/WSServerInitialzer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="225">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/HeartBeatHandler.java">
+        <entry file="file://$PROJECT_DIR$/chat-server/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="1325">
+              <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -178,43 +224,47 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>redisconf</find>
-      <find>RedisConfig</find>
-      <find>RedisTemplate</find>
-      <find>@Slf</find>
-      <find>respon</find>
-      <find>edisTemplate&lt;String,Object&gt;</find>
-      <find>P2pMsgReq</find>
-      <find>redistemplate</find>
-      <find>redisTemplate</find>
-      <find>redisTemplate.opsForValue().s</find>
-      <find>lo</find>
-      <find>1000</find>
-      <find>lom</find>
-      <find>清除/更新本地缓存</find>
-      <find>Mapper.xml</find>
-      <find>qlq</find>
-      <find>mapper</find>
-      <find>dto</find>
-      <find>SqlMapConfig.xml</find>
-      <find>findByUsername</find>
-      <find>username</find>
-      <find>mysql-connector</find>
-      <find>generatorConfig</find>
-      <find>java_home</find>
-      <find>Thread</find>
+      <find>WebSecurityConfigurerAdapter</find>
+      <find>lomb</find>
+      <find>passwordEncoder</find>
+      <find>favicon</find>
+      <find>canAccess(HttpServletRequest request,Authentication authentication)</find>
+      <find>request</find>
+      <find>=</find>
+      <find>DruidDBConfig</find>
+      <find>driverClassName</find>
+      <find>tokenRepository</find>
+      <find>lock</find>
+      <find>lock(</find>
+      <find>notif</find>
+      <find>awi</find>
+      <find>readlock</find>
+      <find>trylock</find>
       <find>netty</find>
-      <find>SimpleChannelInboundHandler</find>
-      <find>I</find>
-      <find>@As</find>
-      <find>aspe</find>
+      <find>100</find>
+      <find>Content_type</find>
+      <find>INDEX</find>
+      <find>queue</find>
+      <find>fireusereventtrigger</find>
+      <find>fireuser</find>
+      <find>joined</find>
+      <find>usere</find>
+      <find>fire</find>
+      <find>fireuserevent</find>
+      <find>run</find>
+      <find>rangeCheckForAdd</find>
+      <find>zoo</find>
     </findStrings>
+    <replaceStrings>
+      <replace>:</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -222,57 +272,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/handel/LoginHandel.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/AccountApplication.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/vo/UidGroup.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/common/util/RedisKeyUtil.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/service/AccountService.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/mim/account/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/测试数据.txt" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/mim/server/cntroller/MimMsgController.java" />
-        <option value="$PROJECT_DIR$/mim-route/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mim-route/src/main/java/com/route/config/ThreadConfig.java" />
-        <option value="$PROJECT_DIR$/mim-route/src/main/java/com/route/thred/HttpThread.java" />
-        <option value="$PROJECT_DIR$/mim-route/src/main/java/com/route/controller/MimRouteController.java" />
-        <option value="$PROJECT_DIR$/mim-server/src/main/java/com/mim/cntroller/MimMsgController.java" />
-        <option value="$PROJECT_DIR$/common-zk/src/main/java/com/zk/ZkApplication.java" />
-        <option value="$PROJECT_DIR$/common-zk/src/main/java/com/mim/ZkApplication.java" />
-        <option value="$PROJECT_DIR$/common-zk/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/resource/application.properties" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/config/MybatisConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/config/MapperScannerConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/config/DruidConfig.java" />
-        <option value="$PROJECT_DIR$/common/src/main/resource/mybatis/sqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/mim/config/SpringConfig.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/MyBatisConfig.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/SpringConfig.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/DruidConfig.java" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/SysUserService.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/resources/mapping/sysuser/SysUserMapper.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/AccountApplication.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/SessionFactoryConfig.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/SysUser.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/SysUserController.java" />
-        <option value="$PROJECT_DIR$/mim-account/pom.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/resources/generator.xml" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/vo/RegisterReq.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/SysUserMapper.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/UserService.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/SysUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/User.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/mim-account/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/mim-route/pom.xml" />
-        <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java" />
-        <option value="$PROJECT_DIR$/netty-server/pom.xml" />
         <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java" />
         <option value="$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/mim/Test.java" />
+        <option value="$PROJECT_DIR$/common-redis/src/main/java/com/mim/distribute/lock/RedisTool.java" />
+        <option value="$PROJECT_DIR$/common-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/common-redis/src/main/java/com/mim/distribute/lock/RedisLockAspect.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/SpringSecurityApplication.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/service/impl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/doman/UserInfo.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/SecurityApplication.java" />
+        <option value="$PROJECT_DIR$/spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/domain/UserInfo.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/repository/UserInfoRepository.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/service/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/service/CustomUserDetailService.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/mim/security/init/DataInit.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/controller/login/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/hello/HelloController.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/init/DataInitService.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/service/permission/impl/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/service/auth/AuthService.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/filter/MyFilterInvocationSecurityMetadataSource.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/filter/MyAccessDecisionManager.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/config/DruidDBConfig.java" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/spring-security/src/main/java/com/myself/security/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/coretechnology_1/src/main/java/com/myself/ProxyTest.java" />
+        <option value="$PROJECT_DIR$/netty/pom.xml" />
+        <option value="$PROJECT_DIR$/netty/src/main/java/com/mim/netty/echo/handler/EchoServerHandler.java" />
+        <option value="$PROJECT_DIR$/netty/src/main/java/com/mim/netty/echo/handler/EchoClientHandler.java" />
+        <option value="$PROJECT_DIR$/netty/src/main/java/com/mim/netty/echo/server/EchoServer.java" />
+        <option value="$PROJECT_DIR$/netty/src/main/java/com/mim/netty/echo/client/EchoClient.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/bootstrap/ChatServerBootStrap.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/bootstrap/ChatServer.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/pipline/ChatServerInitializer.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/ChatServerApplication.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/controller/P2pController.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/chatsession/ChatSession.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/cache/SessionChannel.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/handler/in/HttpRequestHandler.java" />
+        <option value="$PROJECT_DIR$/chat-server/pom.xml" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/util/JsonUtil.java" />
+        <option value="$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/handler/in/TextWebSocketFrameHandler.java" />
       </list>
     </option>
   </component>
@@ -284,29 +334,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mim-account" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mim-account" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mim-account" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="install" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="mim-account" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -314,12 +342,12 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="975" />
-    <option name="y" value="41" />
-    <option name="width" value="974" />
-    <option name="height" value="1006" />
+    <option name="x" value="546" />
+    <option name="y" value="42" />
+    <option name="width" value="955" />
+    <option name="height" value="1031" />
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
@@ -334,131 +362,6 @@
             <path>
               <item name="mim" type="b2602c69:ProjectViewProjectNode" />
               <item name="mim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="mim-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mim" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mim" type="462c0819:PsiDirectoryNode" />
-              <item name="netty-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="handle" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -476,32 +379,37 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552833620657" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561997528806" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-security/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.42988506" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.mim.netty.echo" />
+      <recent name="com.mim.netty.echo.handler" />
+      <recent name="com.mim.security" />
       <recent name="com.common" />
       <recent name="com.zk" />
-      <recent name="mim.server" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.common.vo" />
-      <recent name="mim.server.config" />
-      <recent name="com.common.common" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\projects\java\mim\mim-account\src\main\resources" />
       <recent name="E:\projects\java\mim\mim-account\src\main\java\com\mim" />
       <recent name="E:\projects\java\mim\mim-route\src\main\resources" />
       <recent name="E:\projects\java\mim\common\src\main\resource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.common.vo" />
+      <recent name="mim.server.config" />
+      <recent name="com.common.common" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\java\mim\chat-server\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -520,8 +428,79 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.22132035" />
   </component>
-  <component name="RunManager" selected="Spring Boot.AccountApplication (1)">
+  <component name="RunManager" selected="Application.ChatServerApplication">
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mim.chatserver.bootstrap.ChatServer" />
+      <module name="chat-server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mim.chatserver.bootstrap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mim.chatserver.ChatServerApplication" />
+      <module name="chat-server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mim.chatserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoClient" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mim.netty.echo.client.EchoClient" />
+      <module name="netty" />
+      <option name="PROGRAM_PARAMETERS" value="127.0.0.1 9999" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mim.netty.echo.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServer" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mim.netty.echo.server.EchoServer" />
+      <module name="netty" />
+      <option name="PROGRAM_PARAMETERS" value="9999" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mim.netty.echo.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myself.ProxyTest" />
+      <module name="coretechnology_1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myself.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -534,67 +513,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mim-account" />
+    <configuration name="SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mim.*" />
+          <option name="PATTERN" value="com.mim.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mim.AccountApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mim.security.SecurityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mim-account" />
+    <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="spring-security" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mim.account.*" />
+          <option name="PATTERN" value="com.myself.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mim.account.AccountApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MimRouteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mim-route" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mim.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mim.MimRouteApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MimServer (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mim-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mim.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mim.MimServer" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MimServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mim-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mim.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="mim.server.MimServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.myself.security.SpringSecurityApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -608,19 +548,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.MimServer" />
-      <item itemvalue="Spring Boot.MimRouteApplication" />
-      <item itemvalue="Spring Boot.AccountApplication" />
-      <item itemvalue="Spring Boot.MimServer (1)" />
-      <item itemvalue="Spring Boot.AccountApplication (1)" />
+      <item itemvalue="Application.EchoClient" />
+      <item itemvalue="Application.EchoServer" />
+      <item itemvalue="Application.ProxyTest" />
+      <item itemvalue="Spring Boot.SecurityApplication" />
+      <item itemvalue="Spring Boot.SpringSecurityApplication" />
+      <item itemvalue="Application.ChatServer" />
+      <item itemvalue="Application.ChatServerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.AccountApplication (1)" />
-        <item itemvalue="Spring Boot.MimServer (1)" />
-        <item itemvalue="Spring Boot.AccountApplication" />
-        <item itemvalue="Spring Boot.MimRouteApplication" />
-        <item itemvalue="Spring Boot.MimServer" />
+        <item itemvalue="Application.ChatServerApplication" />
+        <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ProxyTest" />
+        <item itemvalue="Spring Boot.SpringSecurityApplication" />
+        <item itemvalue="Spring Boot.SecurityApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -648,6 +590,20 @@
       <workItem from="1551278893159" duration="120000" />
       <workItem from="1552443485897" duration="26000" />
       <workItem from="1552833599502" duration="620000" />
+      <workItem from="1554021149692" duration="6355000" />
+      <workItem from="1554127381897" duration="626000" />
+      <workItem from="1558963845924" duration="4545000" />
+      <workItem from="1559051620569" duration="6238000" />
+      <workItem from="1559136019084" duration="3844000" />
+      <workItem from="1560258634407" duration="4574000" />
+      <workItem from="1560866598536" duration="3031000" />
+      <workItem from="1560949527568" duration="399000" />
+      <workItem from="1561215846422" duration="4784000" />
+      <workItem from="1561387737653" duration="2322000" />
+      <workItem from="1561986888843" duration="9927000" />
+      <workItem from="1562078700755" duration="1218000" />
+      <workItem from="1562160250162" duration="1230000" />
+      <workItem from="1562507304802" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="添加路由">
       <created>1550411811224</created>
@@ -691,16 +647,23 @@
       <option name="project" value="LOCAL" />
       <updated>1551112494260</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="redis init">
+      <created>1554021258834</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1554021258834</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118772000" />
+    <option name="totallyTimeSpent" value="167897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16044776" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -711,7 +674,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.15140845" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44408253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -719,21 +682,22 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3257329" />
-      <window_info anchor="bottom" id="Spring" order="11" weight="0.3298122" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.18661971" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" visible="true" weight="0.2703583" />
+      <window_info anchor="bottom" id="Spring" order="11" weight="0.3295063" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32464713" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3295063" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" weight="0.4169381" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.12953092" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.27185398" />
       <window_info anchor="right" id="SciView" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,343 +713,442 @@
     <MESSAGE value="群发消息添加线程池" />
     <MESSAGE value="添加mybatis,还未测试" />
     <MESSAGE value="添加mybatis,只能使用注解方式，xml暂时不好用" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加mybatis,只能使用注解方式，xml暂时不好用" />
+    <MESSAGE value="redis init" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis init" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/booter/NettyBooter.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/ChatHandler.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="request.getRequestURI()request" language="JAVA" />
+        <watch expression="request.getRequestURI()" language="JAVA" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="args.length" language="JAVA" />
+        <watch expression="msg.retain().toString()" language="JAVA" />
+        <watch expression="HttpRequestHandler.class.getProtectionDomain()" language="JAVA" />
+        <watch expression="request.uri()" language="JAVA" />
+        <watch expression="request.uri()" language="JAVA" />
+        <watch expression="ctx.channel()" language="JAVA" />
+        <watch expression="(msg.retain()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>msg.retain().toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>msg.retain()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(msg.retain()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ctx.channel()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.uri()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>HttpRequestHandler.class.getProtectionDomain()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>HttpRequestHandler.class.getProtectionDomain().getCodeSource()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>args.length</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getRequestURI()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getRequestURI()request</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common-zk/src/main/java/com/mim/ZkApplication.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelDuplexHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-zk/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-zk/src/main/java/com/mim/thread/RegisterZk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/java/com/mim/thred/HttpThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/zk/ZKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="65" column="44" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.10.RELEASE/spring-context-4.3.10.RELEASE.jar!/org/springframework/context/annotation/Bean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resource/mybatis/sqlMapConfig.xml" />
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/mapper/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/AccountService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common-zk/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/config/MyBatisConfig.java" />
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/config/MapperScannerConfig.java" />
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/config/SpringConfig.java" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/MapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/UserServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/mybatis/sqlMapConfig.xml" />
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="38" column="43" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/DruidConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/mapping/sysuser/SysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/config/SessionFactoryConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/AccountApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-146">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resource/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16.jar!/org/apache/catalina/User.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/stream/ChunkedWriteHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <caret line="23" column="61" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/pom.xml">
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/resources/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/http/HttpServerCodec.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="43" column="67" selection-start-line="43" selection-start-column="67" selection-end-line="43" selection-end-column="67" />
+        <state>
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/generator.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/util/concurrent/DefaultPromise.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/DefaultChannelPromise.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandshakeHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/ByteToMessageDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/CombinedChannelDuplexHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/nio/NioEventLoop.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1031">
+          <caret line="323" selection-start-line="323" selection-end-line="323" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/nio/AbstractNioByteChannel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/DefaultChannelPipeline.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="739" selection-start-line="739" selection-end-line="739" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/MessageToMessageDecoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelInboundHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelHandler.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="6" column="59" lean-forward="true" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/vo/RegisterReq.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="27" />
+        <state relative-caret-position="144">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/UserService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelHandlerContext.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/mapper/UserMapper.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="281">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/domain/User.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/AbstractChannelHandlerContext.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        <state relative-caret-position="156">
+          <caret line="295" column="16" lean-forward="true" selection-start-line="295" selection-start-column="16" selection-end-line="295" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="37" column="25" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
+        <state relative-caret-position="125">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/java/com/mim/service/impl/SysUserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/vo/GroupMsgReq.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="125">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mim-account/src/main/resources/application.properties">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/http/websocketx/WebSocketProtocolHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/vo/Session.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/cntroller/MimMsgController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/java/com/mim/config/ThreadConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-route/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        <state relative-caret-position="150">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelInboundHandlerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/SimpleChannelInboundHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-client/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="50">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoServerHandler.java">
+    <entry file="file://$PROJECT_DIR$/mim-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="125">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="80" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/pipline/ChatServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/controller/P2pController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/ChatServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/bootstrap/ChatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/MimServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/rt.jar!/sun/tools/jar/CommandLine.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/channel/ChannelOutboundInvoker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/vo/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/cntroller/MimMsgController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/chatsession/ChannelSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/cache/SessionChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/mserver/WSServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/service/MsgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/handler/in/HttpRequestHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/util/FastJsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat-server/src/main/java/com/mim/chatserver/handler/in/TextWebSocketFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11025">
+          <caret line="479" column="22" selection-start-line="479" selection-start-column="22" selection-end-line="479" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/LoginHandel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/GroupHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/ChatHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="1125">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netty-server/src/main/java/com/netty/server/handle/EchoInitialzer.java">
+    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handel/AbstractHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/WSServerInitialzer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mim-server/src/main/java/com/mim/handler/HeartBeatHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/nettycodec/EchoEncodec.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/mim/Test.java">
+    <entry file="file://$PROJECT_DIR$/chat-server/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="1325">
+          <caret line="53" column="43" selection-start-line="53" selection-start-column="43" selection-end-line="53" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.33.Final/netty-all-4.1.33.Final.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="485" column="41" selection-start-line="485" selection-start-column="41" selection-end-line="485" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1161,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.608046" />
               </list>
             </option>
           </splitter-proportions>
@@ -1121,7 +1184,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.42988506" />
               </list>
             </option>
           </splitter-proportions>
@@ -1133,7 +1196,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.42988506" />
               </list>
             </option>
           </splitter-proportions>
@@ -1141,12 +1204,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mim-route</last-edited>
+          <last-edited>spring-security</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.42988506" />
               </list>
             </option>
           </splitter-proportions>
@@ -1166,11 +1228,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <last-edited>Maven: ch.qos.logback:logback-core:1.1.11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.608046" />
               </list>
             </option>
           </splitter-proportions>

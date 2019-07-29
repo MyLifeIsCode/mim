@@ -1,0 +1,4 @@
+com\mim\thread\RegisterZk.class
+com\mim\util\ZKit.class
+com\mim\ZkApplication.class
+com\mim\config\AppZkConfiguration.class

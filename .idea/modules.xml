@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/chat-server/chat-server.iml" filepath="$PROJECT_DIR$/chat-server/chat-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-redis/common-redis.iml" filepath="$PROJECT_DIR$/common-redis/common-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/common-zk/common-zk.iml" filepath="$PROJECT_DIR$/common-zk/common-zk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coretechnology_1/coretechnology_1.iml" filepath="$PROJECT_DIR$/coretechnology_1/coretechnology_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/mim.iml" filepath="$PROJECT_DIR$/.idea/mim.iml" />
       <module fileurl="file://$PROJECT_DIR$/mim-account/mim-account.iml" filepath="$PROJECT_DIR$/mim-account/mim-account.iml" />
       <module fileurl="file://$PROJECT_DIR$/mim-route/mim-route.iml" filepath="$PROJECT_DIR$/mim-route/mim-route.iml" />
       <module fileurl="file://$PROJECT_DIR$/mim-server/mim-server.iml" filepath="$PROJECT_DIR$/mim-server/mim-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty/netty.iml" filepath="$PROJECT_DIR$/netty/netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-client/netty-client.iml" filepath="$PROJECT_DIR$/netty-client/netty-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-server/netty-server.iml" filepath="$PROJECT_DIR$/netty-server/netty-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-security/spring-security.iml" filepath="$PROJECT_DIR$/spring-security/spring-security.iml" />
     </modules>
   </component>
 </project>
