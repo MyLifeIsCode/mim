@@ -1,10 +1,7 @@
 package com.mim.service.impl;
 
 
-import com.mim.domain.User;
-import com.mim.mapper.UserMapper;
 import com.mim.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,10 +10,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysUserServiceImpl implements UserService {
 
-    @Autowired
-    private UserMapper userMapper;
+//    @Autowired
+//    private UserRepository userMapper;
 
-    @Override
+/*    @Override
     public User findByUsername(String username) {
         return userMapper.findByUsername(username);
     }
@@ -24,5 +21,5 @@ public class SysUserServiceImpl implements UserService {
     @Override
     public int register(User user) {
         return userMapper.register(user);
-    }
+    }*/
 }

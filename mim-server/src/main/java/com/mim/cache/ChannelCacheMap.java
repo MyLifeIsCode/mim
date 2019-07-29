@@ -1,21 +1,29 @@
 package com.mim.cache;
 
-import io.netty.channel.Channel;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;
 import java.util.Objects;
 import java.util.Set;
 
+@Slf4j
 public class ChannelCacheMap<K,V> extends HashMap<K, V> {
-    private static final ChannelCacheMap<String, Channel> channelMap = new ChannelCacheMap<>();
-
-    public static ChannelCacheMap getInstance(){
-        return channelMap;
-    }
-    private HashMap<K,Long> expireMap = new HashMap<>();
 
     //保留时间
-    private Long retentionTime = 1000 * 60 * 30L;
+    private Long retentionTime;
+
+    public ChannelCacheMap(Long retentionTime){
+        if(Objects.isNull(retentionTime)){
+            this.retentionTime =  1000 * 60 * 30L;
+        }else {
+            this.retentionTime = retentionTime;
+        }
+    }
+
+
+    private HashMap<K,Long> expireMap = new HashMap<>();
+
+
 
     public V put(K k,V v){
         Long expirtTime = retentionTime + System.currentTimeMillis();
@@ -57,8 +65,8 @@ public class ChannelCacheMap<K,V> extends HashMap<K, V> {
     }
 
 
-    private void checkAllKeyExpire(){
-        Set<Entry<K, V>> entries = super.entrySet();
+    private void checkAllKeyExpire(ChannelCacheMap<K,V> channelCacheMap){
+        Set<Entry<K, V>> entries = channelCacheMap.entrySet();
         entries.forEach(entry ->{
             K key = entry.getKey();
             if(!chekExpire(key)){
@@ -66,18 +74,17 @@ public class ChannelCacheMap<K,V> extends HashMap<K, V> {
             }
         });
     }
-    public void clearExpireKey(){
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                while (true){
-                    checkAllKeyExpire();
-                }
+    public void clearExpireKey(ChannelCacheMap<K,V> channelCacheMap){
+        while (true){
+            checkAllKeyExpire(channelCacheMap);
+            try {
+                log.info("刷新缓存 {}",System.currentTimeMillis());
+                Thread.sleep(6*1000);
+            } catch (InterruptedException e) {
+                log.error("刷新缓存失败");
             }
-        };
-        runnable.run();
+        }
     }
-
 
 
 }

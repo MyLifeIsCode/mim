@@ -1,17 +1,7 @@
 package com.mim.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.druid.support.http.StatViewServlet;
-import com.alibaba.druid.support.http.WebStatFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.context.annotation.*;
 
-import javax.sql.DataSource;
-import java.sql.SQLException;
+import org.springframework.context.annotation.*;
 
 /**
  * @author lc
@@ -20,9 +10,9 @@ import java.sql.SQLException;
  */
 @Configuration // 通过该注解来表明该类是一个Spring的配置，相当于一个xml文件
 @ComponentScan(basePackages = "com.mim") // 配置扫描包
-@PropertySource(value = { "classpath:application.properties"}, ignoreResourceNotFound = true)
+@PropertySource(value = {"classpath:application.yml"}, ignoreResourceNotFound = true)
 public class DruidConfig {
-    private Logger logger = LoggerFactory.getLogger(getClass());
+    /*private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Value("${druid.login.enabled}")
     private boolean druidLoginEnabled;
@@ -135,6 +125,6 @@ public class DruidConfig {
         }
         logger.info("druidDataSource配置成功");
         return datasource;
-    }
+    }*/
 
 }

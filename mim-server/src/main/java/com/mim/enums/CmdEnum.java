@@ -2,8 +2,12 @@ package com.mim.enums;
 
 import lombok.Data;
 
+import java.util.Optional;
+
 public enum CmdEnum {
     Login("login"),
+    OneToOne("oneToOne"),
+    Group("group"),
     ;
     private String cmd;
 
@@ -18,4 +22,5 @@ public enum CmdEnum {
     public void setCmd(String cmd) {
         this.cmd = cmd;
     }
+
 }
