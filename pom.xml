@@ -36,6 +36,9 @@
         <module>netty-client</module>
         <module>netty-server</module>
         <module>common-redis</module>
+        <module>coretechnology_1</module>
+        <module>netty</module>
+        <module>chat-server</module>
     </modules>
 
     <dependencyManagement>
@@ -63,7 +66,20 @@
                 <version>${swagger.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.6</version>
+                <scope>provided</scope>
+            </dependency>
 
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.17</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
