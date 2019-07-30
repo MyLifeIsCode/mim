@@ -1,4 +1,4 @@
-package com.mim.domain.vo;
+package com.mim.domain.user.dto;
 
 import lombok.Data;
 
