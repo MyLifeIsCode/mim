@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * Created by  lpw'ASUS on 2018/7/20.
@@ -22,6 +23,12 @@ public class UserServiceImpl implements IUserService {
     @Override
     public List<User> findByUsername(String username) {
         return userRepository.findByUserName(username);
+    }
+
+    @Override
+    public User findById(Long id) {
+        Optional<User> userOptional = userRepository.findById(id);
+        return userOptional.get();
     }
 
     @Override

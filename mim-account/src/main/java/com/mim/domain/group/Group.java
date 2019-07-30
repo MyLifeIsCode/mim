@@ -6,6 +6,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @Entity
@@ -14,12 +15,9 @@ public class Group implements Serializable {
     @Id
     @Column(name = "id")
     private Long id;
-    @Column(name = "group_id")
-    private Long groupId;
-    @Column(name = "uid")
-    private Long uid;
+    @Column(name = "name")
+    private Long name;
+    @Column(name = "created_at")
+    private Date createdAt;
 
-    @Convert(converter = MessageTypeConvert.class)
-    @Column(name = "message_type")
-    private MessageType messageType;
 }

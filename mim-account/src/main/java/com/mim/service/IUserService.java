@@ -10,5 +10,6 @@ import java.util.List;
  */
 public interface IUserService {
     List<User> findByUsername(String username);
+    User findById(Long id);
     User register(User user);
 }
