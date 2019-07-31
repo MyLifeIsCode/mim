@@ -1,7 +1,5 @@
 package com.mim.domain.group;
 
-import com.mim.enums.MessageType;
-import com.mim.enums.MessageTypeConvert;
 import lombok.Data;
 
 import javax.persistence.*;

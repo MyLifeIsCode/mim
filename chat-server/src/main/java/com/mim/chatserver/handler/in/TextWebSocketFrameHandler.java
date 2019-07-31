@@ -27,7 +27,7 @@ public class TextWebSocketFrameHandler extends SimpleChannelInboundHandler<TextW
     protected void channelRead0(ChannelHandlerContext ctx, TextWebSocketFrame msg) throws Exception {
 //        group.writeAndFlush(msg.retain());//发送给所有链接
         String content = msg.content().toString();
-        FastJsonUtils.c
+//        FastJsonUtils.c
         ctx.channel().writeAndFlush(msg.retain());//发送给当前channel
 //        TextWebSocketFrame textWebSocketFrame = new TextWebSocketFrame("123456");
 //        group.write(textWebSocketFrame);
